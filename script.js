@@ -149,7 +149,7 @@ let calcScrollValue = ()=>{
         document.documentElement.scrollTop = 0;
     });
 
-    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%,#e6006d ${scrollValue}%)`;
+    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%,#ff0000 ${scrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;
@@ -185,3 +185,61 @@ ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', { origin: "le
 ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
 ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
 
+
+
+// ----------------------------------- Get Messages ---------------------------------------------
+
+function send(){
+    var name = document.getElementById("name").value;
+    var lname = document.getElementById("lname").value;
+    var mobile = document.getElementById("mobile").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    var body = "Name: " + name + " " + lname + "<br/> Contact Number: " + mobile + "<br/> Email: " + email + "<br/> Message: " + message;
+
+    console.log(body);
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "ganeshthombre9284@gmail.com",
+        Password : "2DAAE36034E60619A16C96F141000B6DCBC2",
+        To : 'ganeshthombre9284@gmail.com',
+        From : "ganeshthombre9284@gmail.com",
+        Subject : subject,
+        Body : body
+        }).then(
+        message => {
+            if(message == 'OK'){
+                swal("Thank You!", "We've received your Mail.", "success");
+                // Swal.fire({
+                //     width: 600,
+                //     padding: "3em",
+                //     color: "#00000",
+                //     background: "#FFFFFF url(/img/mail.gif)",
+                //     title: "Thank You! <br> We've received your Mail.",
+                //     // backdrop: `
+                //     //   rgba(0,0,123,0.4)
+                //     //   url("/images/nyan-cat.gif")
+                //     //   left top
+                //     //   no-repeat
+                //     // `
+                //   });
+            }
+        }
+    );
+}
+
+// const submit = document.getElementById("submit");
+// const input = document.getElementById("name");
+
+// input.addEventListener("keyup", (e) => {
+//     const value = e.currentTarget.value;
+//     submit.disabled = false;
+//     submit.style.background = "linear-gradient(#f00000, #ff8200";
+    
+//     if (value === "") {
+//         submit.disabled = true;
+//     }
+// });
