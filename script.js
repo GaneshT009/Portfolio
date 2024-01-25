@@ -217,7 +217,7 @@ function send(){
                     width: 500,
                     padding: "2em",
                     color: "#00000",
-                    background: "#FFFFFF 50% 10% no-repeat url(/img/mail.gif)",
+                    background: "#FFFFFF 50% 10% no-repeat url(./mail.gif)",
                     html: "<br><br><br><strong>Thank You!</strong><br>Ganesh has received your Mail.",
                     timer: 7100,
                     confirmButtonColor: '#0d7eff',
