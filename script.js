@@ -222,14 +222,14 @@ function send(){
                     timer: 7100,
                     confirmButtonColor: '#0d7eff',
                     confirmButtonText: 'Done',
-                    showCancelButton: true,
-                    shoconfirmButtom: false,
-                    backdrop: `
-                      rgba(0,0,123,0.4)
-                      url("/images/nyan-cat.gif")
-                      left top
-                      no-repeat
-                    `
+                    // showCancelButton: true,
+                    // shoconfirmButtom: false,
+                    // backdrop: `
+                    //   rgba(0,0,123,0.4)
+                    //   url("/images/nyan-cat.gif")
+                    //   left top
+                    //   no-repeat
+                    // `
                   });
             }
         }
