@@ -217,19 +217,19 @@ function send(){
                     width: 500,
                     padding: "2em",
                     color: "#00000",
-                    background: "#FFFFFF 50% 10% no-repeat url(./img/mail.gif)",
+                    background: `#FFFFFF 50% 10% no-repeat url("/img/mail.gif")`,
                     html: "<br><br><br><strong>Thank You!</strong><br>Ganesh has received your Mail.",
                     timer: 7100,
                     confirmButtonColor: '#0d7eff',
                     confirmButtonText: 'Done',
-                    // showCancelButton: true,
-                    // shoconfirmButtom: false,
-                    // backdrop: `
-                    //   rgba(0,0,123,0.4)
-                    //   url("/images/nyan-cat.gif")
-                    //   left top
-                    //   no-repeat
-                    // `
+                    showCancelButton: true,
+                    shoconfirmButtom: false,
+                    backdrop: `
+                      rgba(0,0,123,0.4)
+                      url("/images/nyan-cat.gif")
+                      left top
+                      no-repeat
+                    `
                   });
             }
         }
