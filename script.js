@@ -211,21 +211,26 @@ function send(){
         Body : body
         }).then(
         message => {
-            if(message == 'OK'){
-                swal("Thank You!", "We've received your Mail.", "success");
-                // Swal.fire({
-                //     width: 600,
-                //     padding: "3em",
-                //     color: "#00000",
-                //     background: "#FFFFFF url(/img/mail.gif)",
-                //     title: "Thank You! <br> We've received your Mail.",
-                //     // backdrop: `
-                //     //   rgba(0,0,123,0.4)
-                //     //   url("/images/nyan-cat.gif")
-                //     //   left top
-                //     //   no-repeat
-                //     // `
-                //   });
+            if(message){
+                // swal("Thank You!", "We've received your Mail.", "success");
+                Swal.fire({
+                    width: 500,
+                    padding: "2em",
+                    color: "#00000",
+                    background: "#FFFFFF 50% 10% no-repeat url(/img/mail2.gif)",
+                    html: "<br><br><br><strong>Thank You!</strong><br>Ganesh has received your Mail.",
+                    timer: 7100,
+                    confirmButtonColor: '#0d7eff',
+                    confirmButtonText: 'Done',
+                    // showCancelButton: true,
+                    // shoconfirmButtom: false,
+                    // backdrop: `
+                    //   rgba(0,0,123,0.4)
+                    //   url("/images/nyan-cat.gif")
+                    //   left top
+                    //   no-repeat
+                    // `
+                  });
             }
         }
     );
