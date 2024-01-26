@@ -217,11 +217,7 @@ function send(){
                     width: 500,
                     padding: "2em",
                     color: "#00000",
-<<<<<<< HEAD
-                    background: `#FFFFFF 50% 10% no-repeat url("/img/mail.gif")`,
-=======
                     background: `#FFFFFF 50% 10% no-repeat url("img/mail.gif")`,
->>>>>>> 21ef2be (updated files)
                     html: "<br><br><br><strong>Thank You!</strong><br>Ganesh has received your Mail.",
                     timer: 7100,
                     confirmButtonColor: '#0d7eff',
@@ -237,21 +233,9 @@ function send(){
 };
 
 
-<<<<<<< HEAD
-// input.addEventListener("keyup", (e) => {
-//     const value = e.currentTarget.value;
-//     submit.disabled = false;
-//     submit.style.background = "linear-gradient(#f00000, #ff8200";
-    
-//     if (value === "") {
-//         submit.disabled = true;
-//     }
-// });
-=======
 // --------------------------------- Sound Effect ------------------------------------------
 
 var sound = new Audio();
         setTimeout(function (){
             sound.src = "sounds/gpay.mp3";
         })
->>>>>>> 21ef2be (updated files)
