@@ -212,33 +212,32 @@ function send(){
         }).then(
         message => {
             if(message){
-                // swal("Thank You!", "We've received your Mail.", "success");
+                // var soundfile = new Audio();
                 Swal.fire({
                     width: 500,
                     padding: "2em",
                     color: "#00000",
+<<<<<<< HEAD
                     background: `#FFFFFF 50% 10% no-repeat url("/img/mail.gif")`,
+=======
+                    background: `#FFFFFF 50% 10% no-repeat url("img/mail.gif")`,
+>>>>>>> 21ef2be (updated files)
                     html: "<br><br><br><strong>Thank You!</strong><br>Ganesh has received your Mail.",
                     timer: 7100,
                     confirmButtonColor: '#0d7eff',
                     confirmButtonText: 'Done',
-                    // showCancelButton: true,
-                    // shoconfirmButtom: false,
-                    // backdrop: `
-                    //   rgba(0,0,123,0.4)
-                    //   url("/images/nyan-cat.gif")
-                    //   left top
-                    //   no-repeat
-                    // `
+                    // onOpen: function () {
+                    //     var audplay = new Audio(soundfile)
+                    //     audplay.play();
+                    // }
                   });
             }
         }
     );
-}
+};
 
-// const submit = document.getElementById("submit");
-// const input = document.getElementById("name");
 
+<<<<<<< HEAD
 // input.addEventListener("keyup", (e) => {
 //     const value = e.currentTarget.value;
 //     submit.disabled = false;
@@ -248,3 +247,11 @@ function send(){
 //         submit.disabled = true;
 //     }
 // });
+=======
+// --------------------------------- Sound Effect ------------------------------------------
+
+var sound = new Audio();
+        setTimeout(function (){
+            sound.src = "sounds/gpay.mp3";
+        })
+>>>>>>> 21ef2be (updated files)
